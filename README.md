@@ -1,6 +1,8 @@
 
 # Django Weather App
 
+![Django Weather App Screenshot]("weather-report image.png")
+
 ## Overview
 
 The Django Weather App is a web application that provides users with real-time weather information for specified locations. Users can search for weather forecasts by entering a city name. The app fetches weather data from a third-party API and displays it in an easy-to-read format.
