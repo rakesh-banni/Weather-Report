@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>weather</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+  <nav class="row">
+    <div class="headings"><h1 class="heading">Weather Detector</h1></div>
+  </nav>
+  <br />
+  <br />
+  <div class="row">
+       <form action="" method="POST" class="col-md-6 col-md-offset-3">
+      {% csrf_token %}
+         <div class="input-container">
+           <input type="text" class="styled-input" name="city" placeholder="Search">
+          <button type="submit" class="gradient-button">search</button>
+         </div>
+
+    </form>
+  </div>
+
+  <div class="row">
+    {% if data.country_code %}
+    <div class="container">
+        <h1>Weather Report</h1>
+        {% if data.country_code %}
+        <h1>{{city}}</h1>
+        <h2>Country_Code: {{data.country_code}}</h2>
+        <div class="weather-info">
+            <div class="temperature">
+                <h2>Temprature</h2>
+                <p id="temperature">{{data.temp}}</p>
+            </div>
+            <div class="pressure">
+                <h2>Pressure</h2>
+                <p id="pressure">{{data.pressure}}</p>
+            </div>
+            <div class="humidity">
+                <h2>Humidity</h2>
+                <p id="humidity">{{data.humidity}}</p>
+            </div>
+            <div class="coordinates">
+                <h2>Coordinates</h2>
+                <p id="coordinates">{{data.coordinate}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <script src="{% static script.js %}"></script>
+    {% endif %}
+  </div>
+
+
+<footer class="footer">
+        <div class="containers">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: rakesh.bannigol94499@gmail.com</p>
+                <p>Phone: +91 9449938512</p>
+                <p>Address: juli nagar, Gangavathi, Koppal</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#"><img class = "footer1-image" src = "{% static 'C:\Users\rakes\Desktop\pythonDjango\myblog\myblog\static\images\facce.png' %}" alt="Facebook"></a>
+                <a href="#"><img class = "footer2-image" src ="{% static 'C:\Users\rakes\Desktop\pythonDjango\myblog\myblog\static\images\t.png' %}" alt="Twitter"></a>
+                <a href="#"><img class = "footer3-image" src="{% static 'C:\Users\rakes\Desktop\pythonDjango\myblog\myblog\static\images\instagram-logo.png' %}" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

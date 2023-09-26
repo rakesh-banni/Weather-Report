@@ -1,0 +1,188 @@
+body{
+    margin:0;
+    }
+    
+    .input-container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .heading {
+        text-align: center;
+        font-family: 'Georgia', sans-serif;
+        font-size: 48px;
+        color: #007BFF; /* Blue color for the text */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .heading::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 50px;
+        height: 4px;
+        background-color: #007BFF; /* Line color matching the text */
+        margin-left: -25px; /* Half of the line's width */
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        width: 40%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    /* CSS for styled input with search icon */
+    .styled-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none; /* Remove input focus outline */
+    }
+    
+    /* CSS for gradient button with hover effect */
+    .gradient-button {
+        content:"\1F50D";
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #007BFF, #0056b3);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .gradient-button:hover {
+        background: linear-gradient(45deg, #0056b3, #003c80);
+        /* Add any other hover effects you desire */
+    }
+    
+    /* CSS for weather data display */
+    /* Updated CSS for an attractive weather data display */
+    .container {
+        text-align: center;
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        background-color: #f4f4f4;
+    }
+    
+    h1 {
+        color: #007BFF;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .weather-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .weather-info > div {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        border: 2px solid #007BFF;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .weather-info > div:hover {
+        transform: translateY(-5px);
+    }
+    
+    h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #007BFF;
+    }
+    
+    /* Styling for coordinates */
+    
+    
+    /* Button styles */
+    .button-container {
+        margin-top: 20px;
+    }
+    
+    .button-container button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button-container button:hover {
+        background-color: #0056b3;
+    }
+    /* CSS for the footer section */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+    }
+    
+    .footer .containers {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        height:auto;
+    }
+    
+    
+    .contact-info, .social-media {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    .contact-info h3, .social-media h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .social-media a {
+      
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    
+    .social-media a:hover {
+        color: #007BFF; /* Change to your preferred hover color */
+    }
+    
+    
+    
+    
+    
