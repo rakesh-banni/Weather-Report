@@ -1,7 +1,8 @@
 
 # Django Weather App
 
-![Django Weather App Screenshot]("weather-report image.png")
+
+<img src="screenshot.png" alt="weather-report app">
 
 ## Overview
 
